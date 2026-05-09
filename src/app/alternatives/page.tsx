@@ -6,8 +6,8 @@ import { siteConfig } from '@/config/site';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SimplyCalcs Alternatives & Comparisons',
-  description: 'Compare SimplyCalcs with NerdWallet, Bankrate, Calculator.net, and Zillow. Picking the right calculator for the job.',
+  title: `${siteConfig.name} Alternatives & Comparisons`,
+  description: `Compare ${siteConfig.name} with NerdWallet, Policygenius, Bankrate, and other insurance comparison sites. Pick the right tool for your job.`,
   alternates: { canonical: `${siteConfig.url}/alternatives` },
 };
 
@@ -17,8 +17,8 @@ export default function AlternativesIndex() {
       <Header />
       <main className="container mx-auto px-4 py-12 max-w-5xl">
         <header className="mb-10">
-          <h1 className="text-4xl font-bold mb-3">SimplyCalcs vs Alternatives</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">Honest comparisons with the other major free-calculator sites. Pick the right tool for your job.</p>
+          <h1 className="text-4xl font-bold mb-3">{siteConfig.name} vs Alternatives</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-400">Honest comparisons with the other major insurance calculator and comparison sites. Pick the right tool for your job.</p>
         </header>
         <div className="grid gap-5 md:grid-cols-2">
           {alternatives.map((a) => (

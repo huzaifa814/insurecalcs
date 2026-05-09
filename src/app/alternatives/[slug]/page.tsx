@@ -52,7 +52,7 @@ export default async function AlternativePage({ params }: { params: Promise<{ sl
         </div>
 
         <section className="p-6 rounded-2xl bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 mb-10">
-          <h2 className="font-semibold mb-3">Where SimplyCalcs is better</h2>
+          <h2 className="font-semibold mb-3">Where {siteConfig.name} is better</h2>
           <ul className="space-y-2 text-sm list-disc pl-5">{a.ourAdvantages.map((p, i) => <li key={i}>{p}</li>)}</ul>
         </section>
 
@@ -62,7 +62,7 @@ export default async function AlternativePage({ params }: { params: Promise<{ sl
             <p className="text-sm text-gray-700 dark:text-gray-300">{a.whenToUseThem}</p>
           </div>
           <div className="p-5 rounded-xl border border-gray-200 dark:border-slate-800">
-            <h3 className="font-semibold mb-2">Use SimplyCalcs when</h3>
+            <h3 className="font-semibold mb-2">Use {siteConfig.name} when</h3>
             <p className="text-sm text-gray-700 dark:text-gray-300">{a.whenToUseUs}</p>
           </div>
         </section>
