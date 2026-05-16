@@ -29,6 +29,7 @@ export function Footer() {
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-slate-800">
           <h3 className="font-semibold text-sm mb-3">More free tools</h3>
           <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400">
+            <a href="https://www.freebietemplate.com" className="hover:text-gray-900 dark:hover:text-white">FreebieTemplate</a>
             <a href="https://www.pdfshed.com" className="hover:text-gray-900 dark:hover:text-white">PDFShed</a>
             <a href="https://www.pixshed.com" className="hover:text-gray-900 dark:hover:text-white">PixShed</a>
             <a href="https://www.simplycalcs.com" className="hover:text-gray-900 dark:hover:text-white">SimplyCalcs</a>
